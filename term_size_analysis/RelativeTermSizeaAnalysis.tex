@@ -3,6 +3,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage[usenames, dvipsnames]{color}
 
 %opening
 \title{Parameter Sensitivity}
@@ -123,7 +124,7 @@ j_c H_{out} =  \left(\frac{R_c^3}{3 R_b^2}  V_{max}  -k_m^C \left( C_{out} - C_{
 \; = \left(\frac{R_c^3}{3 R_b^2}  V_{max}  - k_m^{eff} H_{out} + k_m^{eff} H_{cytosol} \right)
 \end{multline}
 
-This equation is independent of the membrane permeability to ${\rm CO_2}$, as $H_{cytosol} = K_{eq}C_{cytosol}$ (NOTE: NIALL this can't be true because then the cytosol would be in equilibrium. What did you mean here?). This observation is consistent with the low flux of ${\rm CO_2}$ leakage in Figure 2.
+This equation is independent of the membrane permeability to ${\rm CO_2}$, as $H_{cytosol} = K_{eq}C_{cytosol}$ (\textcolor{red}{NOTE: NIALL this can't be true because then the cytosol would be in equilibrium. What did you mean here?}). This observation is consistent with the low flux of ${\rm CO_2}$ leakage in Figure 2.
 
 \subsection{Without facilitated ${\rm CO_2}$ uptake external ${\rm CO_2}$ has little effect}
 
@@ -141,7 +142,7 @@ Unless conversion from ${\rm CO_2}$ to ${\rm HCO_3^-}$ is large we note that the
 \section{Effect of Carboxysome permeability}
 
 
-Recalling the equation for $G^C = \frac{D}{R_c^2 k_c^C} + \frac{1}{R_c}-\frac{1}{R_b}$, we can see that the carboxysome permeability to  ${\rm CO_2}$ will only matter if $ \frac{D}{R_c^2 k_c^C} >\frac{1}{R_c}$. In other words the carboxysome permeability to ${\rm CO_2}$, $k_c^C$, begins to effectively trap ${\rm CO_2}$ in the carboxysome when $k_c^C < \frac{D}{R_c} \approx 2$ cm/s for our base case of a 100 nm carboxysome ($R_c = 50$ nm). Similarly $G^H \approx \frac{D}{R_c^2 k_c^H}$ as $k_c^H \leq k_c^C < \frac{D}{R_c}$. To begin let's examine the case when $k_c = k_c^C = k_c^H$.
+Recalling the equation for $G^C = \frac{D}{R_c^2 k_c^C} + \frac{1}{R_c}-\frac{1}{R_b}$, we can see that the carboxysome permeability to  ${\rm CO_2}$ will only matter if $ \frac{D}{R_c^2 k_c^C} >\frac{1}{R_c}$. In other words the carboxysome permeability to ${\rm CO_2}$, $k_c^C$, begins to effectively trap ${\rm CO_2}$ in the carboxysome when $k_c^C < \frac{D}{R_c} \approx 2$ cm/s for our base case of a 100 nm carboxysome ($R_c = 50$ nm). Similarly $G^H \approx \frac{D}{R_c^2 k_c^H}$ as $k_c^H \leq k_c^C < \frac{D}{R_c}$ (\textcolor{red}{NOTE: NIALL isn't $k_c^H \geq k_c^C$ in all the subsequent analyses? Seems like an error}). To begin let's examine the case when $k_c = k_c^C = k_c^H$.
 
 In figure XX observe how the carboxysome radius shifts the onset of carboxysome permeability effecting the CCM function. Both the highest carboxysome permeability where RuBisCO is saturated (blue lines) and carbonic remains unsaturated (maroon lines) and the optimal carboxysome permeability (that requiring the lowest ${\rm HCO_3^-}$ transport to achieve the same ${\rm CO_2}$ concentration) shift to lower permeability values with increasing carboxysome radii.
 
