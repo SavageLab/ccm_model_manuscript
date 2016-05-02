@@ -6,16 +6,18 @@
 \usepackage[usenames, dvipsnames]{color}
 
 %opening
-\title{pH determines the energetic efficiency of the cyanobacterial CO2 concentrating mechanism: Mathematical Supplement}
-\author{Niall Mangan \& Avi Flamholz}
-
+\title{pH determines the energetic efficiency of the cyanobacterial CO2 concentrating mechanism: mathematical supplement}
+\author{
+  \small{Niall Mangan},
+  \small{Avi Flamholz},
+  \small{Rachel Hood}, 
+  \small{Ron Milo} \&
+  \small{David Savage}
+}
 \begin{document}
+\date{}
 
 \maketitle
-
-\begin{abstract}
-\end{abstract}
-
 
 \section{Equations when RuBisCO is saturated}
 The analytic solution for the ${\rm CO_2}$ and ${\rm HCO_3^-}$ concentration in the carboxysome when RuBisCO is saturated is:
@@ -34,7 +36,7 @@ P = ((\alpha + k_m^C)G^C+\frac{D}{R_b^2})(k_m^{eff} G^H + \frac{D}{R_b^2}) \\
 G^C = \frac{D}{R_c^2 k_c^C} + \frac{1}{R_c}-\frac{1}{R_b} \\
 G^H = \frac{D}{R_c^2 k_c^H} + \frac{1}{R_c}-\frac{1}{R_b} 
 \end{eqnarray}
-The derivation of this equation can be found in the supplementary material of (Mangan 2014).   Here we have made a few modifications: (1) kept track of the carboxysome permeability to ${\rm CO_2}$, $k_c^C$, and ${\rm HCO_3^-}$, $k_c^H$, independently, (2) substituted the pH dependent equilibrium constant for the carbonic anhydrase reaction, $K_{eq}(ph) = \frac{V_{ca} K_{ba}}{V_{ba}K_{ca}}$, (3) written the ${\rm CO_2} \rightarrow {\rm HCO_3^-}$ reaction with $\alpha$ as the linear reaction rate (in Mangan 2014 the linear rate was $\alpha/K_\alpha$), (4) we have replaced the membrane permeability to ${\rm HCO_3^-}$ with the effective membrane permeability to the bicarbonate pool, and designated when is dependent on the external pH, $k_m^{eff}(pH_{out})$. This term only appears once in equation 3 for $N$. For all other $k_m^{eff} = k_m^{eff}(pH_{in})$ values it is dependent on the pH inside the cell, so we have dropped indicating the pH dependence to simplify the formulas.
+The derivation of this equation can be found in the supplementary material of (Mangan \& Brenner, eLife 2014). Here we have made a few modifications: (1) kept track of the carboxysome permeability to ${\rm CO_2}$, $k_c^C$, and ${\rm HCO_3^-}$, $k_c^H$, independently, (2) substituted the pH dependent equilibrium constant for the carbonic anhydrase reaction, $K_{eq}(ph) = \frac{V_{ca} K_{ba}}{V_{ba}K_{ca}}$, (3) written the ${\rm CO_2} \rightarrow {\rm HCO_3^-}$ reaction with $\alpha$ as the linear reaction rate (in Mangan 2014 the linear rate was $\alpha/K_\alpha$), (4) we have replaced the membrane permeability to ${\rm HCO_3^-}$ with the effective membrane permeability to the bicarbonate pool, and designated when is dependent on the external pH, $k_m^{eff}(pH_{out})$. This term only appears once in equation 3 for $N$. For all other $k_m^{eff} = k_m^{eff}(pH_{in})$ values it is dependent on the pH inside the cell, so we have dropped indicating the pH dependence to simplify the formulas.
 
 \section{Analysis of membrane permeability effects}
 \subsection{Cell permeabilty compared to diffusive velocities}
@@ -122,7 +124,7 @@ We can calculate $H_{carboxyome} = K_{eq}C_{carboxysome}$ from equation (17), an
 H_{cytosol} =  \frac{(j_c + k_m^{eff}(pH_{out}))H_{out} + \frac{\alpha}{K_\alpha} C_{cytosol}(r=R_b) - k_m^{eff} H_{carboxysome} }{k_m^{eff} G^H + \frac{D}{R_b^2}}G^H
 \end{equation}
 
-We have now shown that all the terms in $H_{cyto}$ are negligibly dependent on the membrane permeability to ${\rm CO_2}$. Therefore, the ${\rm HCO_3^-}$ transport level require to satisfy equation (18) is independent of the membrane permeability to ${\rm CO_2}$. This observation is consistent with the low flux of ${\rm CO_2}$ leakage in Figure 2.
+We have now shown that all the terms in $H_{cyto}$ are negligibly dependent on the membrane permeability to ${\rm CO_2}$. Therefore, the ${\rm HCO_3^-}$ transport level require to satisfy equation (18) is independent of the membrane permeability to ${\rm CO_2}$. This observation is consistent with the low flux of ${\rm CO_2}$ leakage in main text Figure 2.
 
 \subsection{Without facilitated ${\rm CO_2}$ uptake external ${\rm CO_2}$ has little effect}
 
@@ -139,9 +141,9 @@ Unless conversion from ${\rm CO_2}$ to ${\rm HCO_3^-}$ is large we note that the
 Recalling the equation for $G^C = \frac{D}{R_c^2 k_c^C} + \frac{1}{R_c}-\frac{1}{R_b}$, we can see that the carboxysome permeability to  ${\rm CO_2}$ will only matter if $ \frac{D}{R_c^2 k_c^C} >\frac{1}{R_c}$. In other words the carboxysome permeability to ${\rm CO_2}$, $k_c^C$, begins to effectively trap ${\rm CO_2}$ in the carboxysome when $k_c^C < \frac{D}{R_c} \approx 2$ cm/s for our base case of a 100 nm carboxysome ($R_c = 50$ nm). Similarly $G^H \approx \frac{D}{R_c^2 k_c^H}$ when $k_c^H < \frac{D}{R_c}$. As common thinking is that $k_c^H \geq k_c^C$,  $k_c^H < \frac{D}{R_c}$ may not always hold when  $k_c^C < \frac{D}{R_c}$. 
 
 \subsubsection{Different carboxysome peremability for ${\rm HCO_3^-}$}
-An existing hypothesis in the CCM literature is that the carboxysome has differential permeability and is more permeable to ${\rm HCO_3^-}$ and less permeable to ${\rm CO_2}$. Intuitively this would allow more ${\rm HCO_3^-}$ into the carboxysome and trap more ${CO_2}$, thereby accumulating more inorganic carbon in the form of ${\rm CO_2}$. We use our model to test weather differential carboxysome permeability enables higher carboxysomal ${\rm CO_2}$ concentration for the same level of ${\rm HCO_3^-}$ transport. In the following figure we show the $k_c$ vs $j_c$ phase space where we have plotted the carboxysome permeability to ${\rm CO_2}$, $k_c^C$, on the y-axis. We plot different ratios (1, 10, 100, 1000) between $k_c^C$ and the carboxysome permeability to ${\rm HCO_3^-}$, $k_c^H = {\rm ratio} \times k_c^C$. 
+An existing hypothesis in the CCM literature is that the carboxysome has differential permeability and is more permeable to ${\rm HCO_3^-}$ and less permeable to ${\rm CO_2}$. Intuitively this would allow more ${\rm HCO_3^-}$ into the carboxysome and trap more ${CO_2}$, thereby accumulating more inorganic carbon in the form of ${\rm CO_2}$. We use our model to test weather differential carboxysome permeability enables higher carboxysomal ${\rm CO_2}$ concentration for the same level of ${\rm HCO_3^-}$ transport. In the Figure S12 we show the $k_c$ vs $j_c$ phase space where we have plotted the carboxysome permeability to ${\rm CO_2}$, $k_c^C$, on the y-axis. We plot different ratios (1, 10, 100, 1000) between $k_c^C$ and the carboxysome permeability to ${\rm HCO_3^-}$, $k_c^H = {\rm ratio} \times k_c^C$. 
 
-Examining Figure XX, we see that making the carboxysome more permeable to ${\rm HCO_3^-}$ does not improve the function of the CCM as drastically as on might assume. The "turn on" of ${\rm CO_2}$ accumulation with decreasing permeability is unaffected by changes to $k_c^H$, and depends only on the permeability ${\rm CO_2}$, $k_c^C$.The "turn off" of accumulation for lower carboxysome permeabilities is greatly effected by the permeability of the carboxysome to ${\rm HCO_3^-}$, $k_c^H$. These two effects are exactly what we previously discussed as defining the carboxysome permeability optimum.
+Examining Figure S12, we see that making the carboxysome more permeable to ${\rm HCO_3^-}$ does not improve the function of the CCM as drastically as on might assume. The "turn on" of ${\rm CO_2}$ accumulation with decreasing permeability is unaffected by changes to $k_c^H$, and depends only on the permeability ${\rm CO_2}$, $k_c^C$.The "turn off" of accumulation for lower carboxysome permeabilities is greatly effected by the permeability of the carboxysome to ${\rm HCO_3^-}$, $k_c^H$. These two effects are exactly what we previously discussed as defining the carboxysome permeability optimum.
 
 As we start at the top of the y-axis and decrease the carboxysome permeability the following occurs: At high permeability not enough ${\rm CO_2}$ is trapped, but ${\rm HCO_3^-}$ enters readily. As we moved to lower permeabilities ${\rm CO_2}$begins to be trapped, but there is a window where ${\rm HCO_3^-}$ still enters enough to supply the system. Eventually the carboxysome begins to restrict ${\rm HCO_3^-}$ entry. If the carboxysome is more permeable to ${\rm HCO_3^-}$ than to ${\rm CO_2}$ then the window where ${\rm CO_2}$ trapping is effective without restricting ${\rm HCO_3^-}$ entry broadens. The width of this window (on the y-axis) will also depend strongly on how much of the ${\rm CO_2}$ is being fixed.
 
@@ -167,7 +169,7 @@ The sensitivity of the cost to our assumption for the value of the membrane perm
 j_c H_{out} =  \left(\frac{R_c^3}{3 R_b^2}  V_{max}  -k_m^C \left( C_{out} - C_{cytosol} \right) -k_m^{eff}(pH_{out}) H_{out} +k_m^{eff}(pH_{in})  H_{cytosol} \right) \\ 
 \; = \left(\frac{R_c^3}{3 R_b^2}  V_{max}  - k_m^{eff}(pH_{out}) H_{out} + k_m^{eff}(pH_{in}) H_{cytosol} \right)
 \end{multline}
-In this equation $k_m^{eff} = k_m^{H_2CO_3} \times 10^{(pK_1 - pH)}$. Therefore, the leakage of ${H_{total}}$ out of the cell will depend linearly on what we assume for $ k_m^{H_2CO_3}$. This linear dependence is past on to the active ${\rm HCO_3^-}$ transport required to replenish the leaked inorganic carbon, and therefore onto the CCM cost. In Figure XX you can see this effect, where going from $ k_m^{H_2CO_3} = 3\times10^{-2}$ to $ k_m^{H_2CO_3} = 3\times10^{-3}$ (an order of magnitude change), decreases the active ${\rm HCO_3^-}$ transport needed by an order of magnitude. Decreasing  to $ k_m^{H_2CO_3} = 3\times10^{-4}$ is a little less than an order of magnitude, indicating that the linear dependence breaks down and ${\rm CO_2}$ leakage would become important for that value. There is also an order of magnitude change in the optimal carboxysome permeability from ${\rm 10^{-4}}$ to ${\rm 10^{-5}}$ across the 2 order of magnitude change in $ k_m^{H_2CO_3}$ we are checking.
+In this equation $k_m^{eff} = k_m^{H_2CO_3} \times 10^{(pK_1 - pH)}$. Therefore, the leakage of ${H_{total}}$ out of the cell will depend linearly on what we assume for $ k_m^{H_2CO_3}$. This linear dependence is past on to the active ${\rm HCO_3^-}$ transport required to replenish the leaked inorganic carbon, and therefore onto the CCM cost. In Figure S14 you can see this effect, where going from $ k_m^{H_2CO_3} = 3\times10^{-2}$ to $ k_m^{H_2CO_3} = 3\times10^{-3}$ (an order of magnitude change), decreases the active ${\rm HCO_3^-}$ transport needed by an order of magnitude. Decreasing  to $ k_m^{H_2CO_3} = 3\times10^{-4}$ is a little less than an order of magnitude, indicating that the linear dependence breaks down and ${\rm CO_2}$ leakage would become important for that value. There is also an order of magnitude change in the optimal carboxysome permeability from ${\rm 10^{-4}}$ to ${\rm 10^{-5}}$ across the 2 order of magnitude change in $ k_m^{H_2CO_3}$ we are checking.
 
 %We can define the \% of ${\rm CO_2}$ scavanged compared to that leaked out of the carboxysome as:
 %\begin{equation}
